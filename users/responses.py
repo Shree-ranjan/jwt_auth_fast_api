@@ -9,7 +9,9 @@ class BaseResponse(BaseModel):
 
 
 class UserResponse(BaseModel):
-    id: int
+    # id: int
     name: str
     email: EmailStr
-    created_at: Union[None, datetime] = None
+    location: str
+    about: str
+    # created_at: Union[None, datetime] = None
